@@ -28,10 +28,10 @@ services:
 
   frontend:
     build:
-      context: ./f_net
+      context: ../f_net
       dockerfile: Dockerfile
     ports:
       - "3001:3000"
     volumes:
-      - ./f_net:/app
+      - ../f_net:/app
       - /app/node_modules
