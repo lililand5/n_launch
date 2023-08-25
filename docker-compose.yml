@@ -25,3 +25,13 @@ services:
       DEVELOPMENT_DATABASE: net_dev
       TEST_DATABASE: net_test
       PRODUCTION_DATABASE: net_prod
+
+  frontend:
+    build:
+      context: ./f_net
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./f_net:/app
+      - /app/node_modules
