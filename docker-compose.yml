@@ -33,5 +33,5 @@ services:
     ports:
       - "3001:3000"
     volumes:
-      - ../f_net:/app
-      - /app/node_modules
+      - ./f_net:/f_net
+      - /f_net/node_modules
