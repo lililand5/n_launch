@@ -33,5 +33,5 @@ services:
     ports:
       - "3001:3000"
     volumes:
-      - ./f_net:/f_net
+      - /home/a/0_pet/network/f_net:/f_net
       - /f_net/node_modules
