@@ -13,7 +13,7 @@ services:
       dockerfile: Dockerfile
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
     volumes:
-      - /home/a/0_pet/network/b_net:/b_net
+      - ../b_net:/b_net
     ports:
       - "3000:3000"
     depends_on:
@@ -33,5 +33,5 @@ services:
     ports:
       - "3001:3000"
     volumes:
-      - /home/a/0_pet/network/f_net:/f_net
+      - ../f_net:/f_net
       - /f_net/node_modules
